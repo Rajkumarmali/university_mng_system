@@ -24,6 +24,10 @@ import Exam from '../pages/student/exam/Exam';
 import StudentExamResult from '../pages/Teacher/classes/exam/result/StudentExamResult';
 import UniversityExam from '../pages/universityExam/UniversityExam';
 import StudentUniversityExam from '../pages/student/universityExam/StudentUniversityExam';
+import Chatbot from '../pages/ai/Chatbot';
+import StudentPerformance from '../pages/ai/StudentPerformance';
+import ExamQuestionGenerator from '../pages/ai/ExamQuestionGenerator';
+import CourseRecommendations from '../pages/ai/CourseRecommendations';
 
 import './Layout.css'
 import MobileHome from './MobileHome';
@@ -68,6 +72,10 @@ const Layout = () => {
                         <Route path='department/details/:departmentId' element={<DepartmentDetails />} />
                         <Route path='fee' element={<Fee />} />
                         <Route path='notification' element={<Notification />} />
+                        <Route path='ai/chatbot' element={<Chatbot />} />
+                        <Route path='ai/performance' element={<StudentPerformance />} />
+                        <Route path='ai/exam-generator' element={<ExamQuestionGenerator />} />
+                        <Route path='ai/recommendations' element={<CourseRecommendations />} />
                     </Routes>
                 </div>
             </div>
