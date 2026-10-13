@@ -137,6 +137,27 @@ const Sidebar = () => {
                         </Link>
                     </li>
                 }
+                {
+                    (isStudent || isTeacher || isAdmin) &&
+                    <li>
+                        <Link to="/ai/chatbot" className="menu-item">
+                            <i className="bi bi-robot me-2"></i>
+                            AI Chatbot
+                        </Link>
+                        <Link to="/ai/performance" className="menu-item">
+                            <i className="bi bi-graph-up me-2"></i>
+                            Performance Prediction
+                        </Link>
+                        <Link to="/ai/exam-generator" className="menu-item">
+                            <i className="bi bi-file-earmark-text me-2"></i>
+                            Exam Generator
+                        </Link>
+                        <Link to="/ai/recommendations" className="menu-item">
+                            <i className="bi bi-lightbulb me-2"></i>
+                            Course Recommendations
+                        </Link>
+                    </li>
+                }
             </ul>
         </div>
     );
